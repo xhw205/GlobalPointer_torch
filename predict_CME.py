@@ -51,7 +51,7 @@ def NER_RELATION(text, tokenizer, ner_model,  max_len=256):
 
 if __name__ == '__main__':
     all_ = []
-    for d in tqdm(json.load(open('./CMeEE_test.json'))):
+    for d in tqdm(json.load(open('./datasets/CMeEE_test.json'))):
         all_.append(NER_RELATION(d["text"], tokenizer= tokenizer, ner_model=model))
     json.dump(
         all_,
