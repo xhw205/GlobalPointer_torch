@@ -37,16 +37,9 @@ class EntDataset(Dataset):
         if self.istrain:
             text = item[0]
             token2char_span_mapping = self.tokenizer(text, return_offsets_mapping=True, max_length=max_len, truncation=True)["offset_mapping"]
-            new_span = []
-            for i in token2char_span_mapping:
-                #将token_start_end由(0,0),(0,1),(1,2)统一转为[[],[1],[2]]格式
-                if i[0] == i[1]:new_span.append([]) #[CLS] [SEP]
-                else:
-                    if i[0] + 1 == i[1]:new_span.append([i[0]])
-                    else:new_span.append([i[0], i[-1] - 1])
-            start_mapping = {j[0]: i for i, j in enumerate(new_span) if j}
-            end_mapping = {j[-1]: i for i, j in enumerate(new_span) if j}
-
+            start_mapping = {j[0]: i for i, j in enumerate(token2char_span_mapping) if j != (0, 0)}
+            end_mapping = {j[-1] - 1: i for i, j in enumerate(token2char_span_mapping) if j != (0, 0)}
+            #将raw_text的下标 与 token的start和end下标对应
             encoder_txt = self.tokenizer.encode_plus(text, max_length=max_len, truncation=True)
             input_ids = encoder_txt["input_ids"]
             token_type_ids = encoder_txt["token_type_ids"]
