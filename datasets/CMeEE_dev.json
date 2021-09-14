@@ -1,0 +1,31 @@
+[
+  {
+    "text": "因而儿童肺部病变较轻，肺内炎性病变吸收较快。",
+    "entities": [
+      {
+        "start_idx": 4,
+        "end_idx": 5,
+        "type": "bod",
+        "entity": "肺部"
+      },
+      {
+        "start_idx": 4,
+        "end_idx": 7,
+        "type": "sym",
+        "entity": "肺部病变"
+      },
+      {
+        "start_idx": 11,
+        "end_idx": 11,
+        "type": "bod",
+        "entity": "肺"
+      },
+      {
+        "start_idx": 11,
+        "end_idx": 16,
+        "type": "sym",
+        "entity": "肺内炎性病变"
+      }
+    ]
+  }
+]

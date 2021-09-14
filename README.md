@@ -25,7 +25,7 @@
 
 ### 运行
 
-注意把train/predict中的 bert_model_path 路径改为你自己的
+注意把train/predict文件中的 bert_model_path 路径改为你自己的
 
 #### train
 
@@ -43,5 +43,5 @@ python predict_CME.py
 
 苏神的模型效果还是不错的！
 
-![image-20210914093108205](C:\Users\86138\AppData\Roaming\Typora\typora-user-images\image-20210914093108205.png)
+![image-20210914093108205.png](https://i.loli.net/2021/09/14/a1Zj7d4ik9CoePU.png)
 
