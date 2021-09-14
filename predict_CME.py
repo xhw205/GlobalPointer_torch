@@ -12,7 +12,7 @@ import numpy as np
 from tqdm import  tqdm
 
 bert_model_path = '/home/xhw205/python_project/Entity-relation-sota/models_roBerta' #your RoBert_large path
-save_model_path = './ent_model.pth'
+save_model_path = './outputs/ent_model.pth'
 device = torch.device("cuda:0")
 
 max_len = 256
