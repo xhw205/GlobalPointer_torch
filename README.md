@@ -1,5 +1,7 @@
 ## 医学实体抽取_GlobalPointer_torch
-该项目仅支持NER实体识别，实体关系识别请移步[此仓库](https://github.com/xhw205/GPLinker_torch)
+该项目仅支持NER实体识别
++ 更加节约参数、高效的版本请移步[此仓库](https://github.com/xhw205/Efficient-GlobalPointer-torch)
++ 支持实体关系识别/SPO抽取的版本请移步[此仓库](https://github.com/xhw205/GPLinker_torch)
 ### 介绍
 
 思想来自于苏神 [GlobalPointer](https://kexue.fm/archives/8373)，原始版本是基于keras实现的，模型结构实现参考[现有 pytorch 复现代码](https://github.com/gaohongkui/GlobalPointer_pytorch)【感谢!】，基于torch百分百复现苏神原始效果。
