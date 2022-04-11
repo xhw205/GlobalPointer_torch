@@ -1,4 +1,4 @@
-## 医学实体抽取_GlobalPointer_torch
+## NER实体抽取_GlobalPointer_torch
 该项目仅支持NER实体识别
 + 更加节约参数、高效的NER版本请移步[此仓库](https://github.com/xhw205/Efficient-GlobalPointer-torch)
 + 支持实体关系识别/SPO抽取的版本请移步[此仓库](https://github.com/xhw205/GPLinker_torch)
